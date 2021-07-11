@@ -33,7 +33,7 @@ class ArticleRequest extends FormRequest
     {
         return [
             'title' => 'タイトル',
-            'body' => '本文'
-        ]
+            'body' => '本文',
+        ];
     }
 }
