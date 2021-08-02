@@ -15,7 +15,7 @@
 
               @if (session('status'))
                   <div class="card-text alert alert-success">
-                    {[ session('status') ]}
+                    {{ session('status') }}
                   </div>
               @endif
 
