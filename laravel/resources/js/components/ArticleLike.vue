@@ -7,6 +7,7 @@
       <i
         class="fas fa-heart mr-1"
         :class="{'red-text':this.isLikedBy}"
+        
       />
     </button>
     {{ countLikes }}
