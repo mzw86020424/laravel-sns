@@ -5,7 +5,7 @@
       v-model="tag"
       :tags="tags"
       placeholder="タグを5個まで入力できます"
-      :autocomplete-items="fiteredItems"
+      :autocomplete-items="filteredItems"
       @tags-changed="newTags => tags = newTags"
     />
   </div>
@@ -22,23 +22,16 @@ export default {
     initialTags: {
       type: Array,
       default: [],
-    }
+    },
+    autocompleteItems: {
+    tpye: Array,
+    default: [],
+    },
   },
   data() {
     return {
       tag: '',
       tags: this.initialTags,
-      autocompleteItems: [{
-        text: 'Spain',
-      }, {
-        text: 'France',
-      }, {
-        text: 'USA',
-      }, {
-        text: 'Germany',
-      }, {
-        text: 'Chaina',
-      }],
     };
   },
   computed: {
